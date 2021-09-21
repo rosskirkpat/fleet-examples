@@ -8,22 +8,22 @@ targetCustomizations:
   clusterSelector:
     matchLabels:
       windows.version: win2004
-- name: win1909
+- name: win20H2
   helm:
     values:
       image:
-        tag: 1909
+        tag: 20H2
   clusterSelector:
     matchLabels:
-      windows.version: win1909
-- name: win1903
+      windows.version: win20H2
+- name: win2022
   helm:
     values:
       image:
-        tag: 1903
+        tag: 2022
   clusterSelector:
     matchLabels:
-      windows.version: win1903
+      windows.version: win2022
 - name: win1809
   helm:
     values:
